@@ -16,10 +16,10 @@
 //INITIALIZATION REGISTERS
 #define MPU6050_WHO_AM_I           0x75
 
-#define MPU6050_PWR_MGMT_1         0x6B
+#define MPU6050_PWR_MGMT_1         0x1B
 #define MPU6050_SAMPLE_RATE_DIV    0x19
 #define MPU6050_CONFIG             0x1A
-#define MPU6050_GYRO_CONFIG        0x1B
+#define MPU6050_GYRO_CONFIG        0x6B
 #define MPU6050_ACCEL_CONFIG       0x1C
 
 //DATA REGISTERS
@@ -48,6 +48,8 @@
 #define MPU6050_GYRO_CONFIG_DEF 0x18
 #define MPU6050_ACCEL_CONFIG_DEF 0x01
 
-void MPU6050_INIT(I2C_HandleTypeDef hi2c1);
-int16_t MPU6050_UPDATE(I2C_HandleTypeDef hi2c1);
+
+
+void MPU6050_INIT(I2C_HandleTypeDef *hi2c);
+int16_t MPU6050_UPDATE(I2C_HandleTypeDef *hi2c);
 int16_t* MPU_6050_GET_DATA(void);
