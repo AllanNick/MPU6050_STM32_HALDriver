@@ -2,8 +2,8 @@
 // [C]2018 - 2023 Nick Computer,
 
 //INCLUDES
-#include "stm32f1xx_hal.h" //fxx is the family of the microcontroller
-#include "stm32f1xx_hal_i2c.h" //change this to your microcontroller family Eg: stm32f1xx_hal_i2c.h
+#include "stm32f4xx_hal.h" //fxx is the family of the microcontroller
+#include "stm32f4xx_hal_i2c.h" //change this to your microcontroller family Eg: stm32f1xx_hal_i2c.h
 
 
 //CONSTANTS & VARIABLES
